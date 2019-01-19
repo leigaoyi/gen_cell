@@ -15,5 +15,7 @@ for i in data_name_list: #[:1]:
     data_list.append(io.imread(i))
 process_data = []
 for i in data_list: # 255-->(0,1)
-    fig = i/255.
-    process_data.append(fig)    
+    fig = i/255.*2 - 1
+    process_data.append(fig)   
+    
+    
